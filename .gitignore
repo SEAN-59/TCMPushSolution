@@ -27,8 +27,8 @@ xcuserdata/
 
 ## Xcode Workspaces
 *.xcworkspace
-!*.xcworkspace/contents.xcworkspacedata
-!*.xcworkspace/xcuserdata
+#!*.xcworkspace/contents.xcworkspacedata
+
 *.xccheckout
 *.xcscmblueprint
 
