@@ -16,11 +16,11 @@ let package = Package(
         .package(url: "https://github.com/firebase/firebase-ios-sdk", from: "12.0.0")
     ],
     targets: [
-        // 바이너리 타겟 (v0.1.0)
+        // 바이너리 타겟 (v0.1.1)
         .binaryTarget(
             name: "TCMPushSolution_Core",
-            url: "https://github.com/SEAN-59/TCMPushSolution/releases/download/0.1.0/TCMPushSolution.xcframework.zip",
-            checksum: "d5ea2f42fa8597195d1475614969ca4b150967a4ced4dfd974d3310a68bab3e0"
+            url: "https://github.com/SEAN-59/TCMPushSolution/releases/download/0.1.1/TCMPushSolution.xcframework.zip",
+            checksum: "140025cee8e2eb18b4d8f486ecd0c086e22eb3824a2c977dd039a8a4d3429a8b"
         ),
         
         // 래퍼 타겟
