@@ -1,5 +1,13 @@
 # TCMPushSolution SDK
 
+> **Note**: 현재 GitLab 패키지 레지스트리가 HTTP만 지원하여 SPM의 binaryTarget 다운로드가 차단됩니다.
+> 이 문제가 해결될 때까지 **GitHub**를 통해 배포합니다.
+>
+> - **GitHub URL**: `https://github.com/SEAN-59/TCMPushSolution.git`
+> - **GitLab URL** (사용 불가): ~~`http://211.62.111.247:7100/tcm/ios-sdk.git`~~
+
+---
+
 iOS 푸시 알림 SDK - Firebase Cloud Messaging(FCM) 기반의 푸시 알림 통합 솔루션
 
 ## 개요
@@ -31,7 +39,7 @@ TCMPushSolution은 iOS 앱에서 푸시 알림을 쉽게 구현할 수 있도록
 1. Xcode에서 **File > Add Package Dependencies...** 선택
 2. 패키지 URL 입력:
    ```
-   http://211.62.111.247:7100/tcm/ios-sdk.git
+   https://github.com/SEAN-59/TCMPushSolution.git
    ```
 3. **Add Package** 클릭
 
@@ -39,7 +47,7 @@ TCMPushSolution은 iOS 앱에서 푸시 알림을 쉽게 구현할 수 있도록
 
 ```swift
 dependencies: [
-    .package(url: "http://211.62.111.247:7100/tcm/ios-sdk.git", from: "0.1.0")
+    .package(url: "https://github.com/SEAN-59/TCMPushSolution.git", from: "0.1.0")
 ]
 ```
 
@@ -314,6 +322,13 @@ Firebase 초기화가 완료되지 않았을 수 있습니다. `GoogleService-In
 3. 이미지 URL이 HTTPS인지 확인
 
 ## 버전 히스토리
+
+- **v0.1.2** - Rich Push 버그 수정
+  - NotificationService Extension 이미지 첨부 동기 처리 방식으로 변경
+  - 임시 디렉토리 URL 생성 방식 수정
+
+- **v0.1.1** - Rich Push 버그 수정
+  - 임시 디렉토리 URL 생성 오류 수정
 
 - **v0.1.0** - 초기 테스트 릴리스
   - 디바이스 등록 및 푸시 수신
